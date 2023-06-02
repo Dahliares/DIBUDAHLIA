@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.cdnfonts.com/css/socake');
+
+:root {
+
+    --font-color: rgb(81, 16, 194);
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    background: url(img/scroll.jpg);
+    padding-top: 80px;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+#galeria,
+#perfil,
+#resum,
+#porto,
+#contact {
+
+    scroll-margin-top: 150px;
+}
+
+a {
+
+    text-decoration: none;
+    color: var(--font-color);
+
+}
+
+.horizontal-padding {
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.vertical-padding {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h1{
+
+    font-family: 'Socake', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(85, 83, 83);
+    font-size: 50px;
+
+
+
+}
+
+
+
+
+
+
+@media (min-width:990px) {
+
+    .horizontal-padding {
+
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .vertical-padding {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
