@@ -180,5 +180,14 @@
         color: aqua;
     }
 
+    .logotype {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        font-size: 40px;
+        font-family: 'Luckie Bluchi', sans-serif;
+        padding-top: 10px;
+    }
+
 }
 

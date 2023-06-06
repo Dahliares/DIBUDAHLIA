@@ -45,3 +45,16 @@
 .fecha{
     font-size: 12px;
 }
+
+
+@media (max-width: 560px){
+
+    .graella{
+
+        grid-template-columns: 90%;
+        
+        
+    }
+    
+   
+}
