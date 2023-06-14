@@ -13,7 +13,7 @@
 }
 
 .perfil img{
-
+    width: 400px;
     
 }
 
@@ -50,6 +50,11 @@
         text-align: center;        
         margin: 0 30px;
         box-shadow: 0 4px 10px cornflowerblue;
+    }
+
+    .perfil img{
+        width: 300px;
+        
     }
 
 }

@@ -8,15 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/img/icodahlia.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="dibudahlia.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="graella.css">
     <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dibu-Dahlia</title>
-    <script defer src="cv.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('mAyxNveNxqnZ_1nw8')
+    </script>
+    <script defer src="dibudahlia.js"></script>
 </head>
 
 
@@ -38,9 +44,10 @@
                     <i class="fa-regular fa-circle-xmark fa-xl" style="color: #fafafa;"></i>
                 </button>
                 <li><a href="#galeria" class="selected">Galería</a></li>
-                <!--<li><a href="#skills">Subir Foto</a></li>
-                <li><a href="#porto">La Artista</a></li>-->
+
+                <!--<li><a href="#porto">La Artista</a></li>-->
                 <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#contacto">Contacto</a></li>
 
             </ul>
         </nav>
@@ -66,12 +73,13 @@
                 <div class="fecha">2020</div>
                 <div class="descripcion">Pastel de cumpleaños de mis 6 años y 2 añito de mi hermanito</div>
             </div>
-            
+
             <div class="dibujo">
                 <img src="img/puffy.jpg" alt="dibu">
                 <h3 class="nombre">Puffy fire</h3>
                 <div class="fecha">2023</div>
-                <div class="descripcion">Personaje del juego Grandia. Es la mascota del personaje Su. Juntos hacen el ataque Rah-Rah</div>
+                <div class="descripcion">Personaje del juego Grandia. Es la mascota del personaje Su. Juntos hacen el
+                    ataque Rah-Rah</div>
             </div>
             <div class="dibujo">
                 <img src="img/futbol.jpg" alt="dibu">
@@ -83,7 +91,7 @@
                 <img src="img/playa.jpg" alt="dibu">
                 <h3 class="nombre">Atardecer playero</h3>
                 <div class="fecha">2023</div>
-                <div class="descripcion">Atardecer en la playa, con un muñeco del juego Class Dojo. 
+                <div class="descripcion">Atardecer en la playa, con un muñeco del juego Class Dojo.
                     Aparece en la playa sin ningún motivo</div>
             </div>
             <div class="dibujo">
@@ -174,7 +182,7 @@
 
 
 
-          
+
 
 
 
@@ -206,6 +214,36 @@
                 Sueño con convertirme en una artista famosa algún día y compartir mi pasión con el mundo.
             </div>
         </div>
+
+
+    </div>
+    
+    <div id="contacto" class="contacto">
+
+        <h1 class="contacto-title">Enviame un mensaje!!</h1>
+
+        <div class="form-container">
+            <div class="contacto-p">
+                Si quieres enviarme un mensaje estaré encantada de leerlo y contestarte.
+                <br>Ya sea solo para saludar, para dar alguna idea, o para comprar alguna de
+                mis obras.
+
+            </div>
+
+            <form id="form" class="form">
+
+                <label for="from_name">Tu nombre:</label>
+                <input type="text" name="from_name" id="from_name" required>
+
+                <label for="email">Tu e-mail (si tienes):</label>
+                <input type="text" name="email" id="email">
+
+                <label for="message">Tu mensaje:</label>
+                <textarea name="message" id="message" rows="6" required></textarea>
+
+                <input type="submit" id="button" value="Enviar mensaje">
+            </form>
+        </div class="form-container">
 
 
     </div>

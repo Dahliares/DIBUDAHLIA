@@ -52,6 +52,8 @@
     .graella{
 
         grid-template-columns: 90%;
+        align-items: center;
+
         
         
     }
