@@ -20,6 +20,8 @@ window.onload = function () {
 
   });
 
+  //EMAIL JS------------------------------------
+
   const btn = document.getElementById('button');
 
   document.getElementById('form')
@@ -41,12 +43,8 @@ window.onload = function () {
         });
     });
 
-
-    fetch("dibujos.json")
-    .then(response => response.json())
-    .then(json => console.log(json));
-
  
+    
 
 
 }
